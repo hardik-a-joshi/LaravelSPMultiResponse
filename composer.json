@@ -1,0 +1,50 @@
+{
+    "name": "laravel-hrdk/laravel-s-p-multi-response",
+    "description": "LaravelSPMultiResponse is a powerful Laravel package designed to streamline the execution of SQL stored procedures with the capability to handle multiple response sets effortlessly. With this package, you can seamlessly integrate stored procedures into your Laravel application, simplifying database interactions and enhancing performance. Say goodbye to complex database queries and hello to efficient, organized, and scalable database operations with LaravelSPMultiResponse.",
+    "keywords": [
+        "laravel"
+    ],
+    "homepage": "https://github.com/laravel_hrdk/LaravelSPMultiResponse",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Hardik Joshi",
+            "email": "hrdk.dev@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "illuminate/support": "^9.6"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^7.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "laravel_hrdk\\LaravelSPMultiResponse\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "laravel_hrdk\\LaravelSPMultiResponse\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "laravel_hrdk\\LaravelSPMultiResponse\\ServiceProvider"
+            ]
+        }
+    }
+}
